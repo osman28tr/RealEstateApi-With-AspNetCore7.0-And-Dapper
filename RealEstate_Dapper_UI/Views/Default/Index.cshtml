@@ -4,5 +4,13 @@
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
 }
 
-<h2>burası anasayfa olacak.</h2>
+@await Component.InvokeAsync("_DefaultFeatureComponentPartial")
+
+@await Component.InvokeAsync("_DefaultHomepageProductList")
+
+@await Component.InvokeAsync("_DefaultWhoWeAreComponentPartial")
+
+@await Component.InvokeAsync("_DefaultServicesComponentPartial")
+
+@await Component.InvokeAsync("_DefaultProductListExploreCitiesComponentPartial")
 
